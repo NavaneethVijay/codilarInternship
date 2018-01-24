@@ -23,8 +23,8 @@ ul li{
 }
 
 ul li:not(:first-child) {
+  text-align: center;
   display: none;
-  border-bottom: 1px solid grey;
 }
 .active{
   color: tomato;
