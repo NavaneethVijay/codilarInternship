@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+</head>
+<body>
+  <section id="intro">
+    <h2>the b</h2>
+    <div id="circle"></div>
+    <h3>ring company</h3>
+  </section>
+  <header>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">JOBS</a></li>
+        <li><a href="#">FEEDBACK</a></li>
+        <li><a href="#">HAT</a></li>
+        <a href="#"><span>Login</span></a>
+      </ul>
+
+  </header>
+  <section id="sign_up">
+    <p>
+      Sign Up<span></span><button id="modal-btn" onclick="openModal()" class="button">"let's go"</button>
+    </p>
+  </section>
+  <div id="modal-bg" class="modal-bg">
+
+    <div class="modal">
+
+      <div class="modal-form">
+        <h2>sign up</h2>
+        <form name="login" onsubmit="validate()">
+          <input value="Email"  type="email" name="mail" onfocus="this.value=''"/><br /><br />
+          <input value="password"  type="password" name="pwd" onfocus="this.value=''"/><br />
+          <input type="checkbox" /> <span>Keep me logged in</span><span>Forgot email or password?</span>
+          <button>REGISTER</button>
+          <input type="submit" value="SIGN IN" />
+        </form>
+      </div>
+
+      <div class="modal-btm">
+        <pre>
+          ____________    OR     ___________
+        </pre>
+        <button>connect with <b>facebook</b></button>
+      </div>
+
+
+
+      <div class="modal-image">
+      </div>
+    </div>
+
+  </div>
+
+<script>
+function validate() {
+  var mail = document.login.mail.value;
+  var password = document.login.pwd.value;
+
+  if(password.length < 8){
+    alert("Password should contain min 8 characters");
+    return false;
+  }
+
+  if(mail == "" || mail.checkValidity()){
+    alert("Mail ID can not be empty");
+    return false;
+  }
+
+}
+
+
+<!-- modal open -->
+
+var modal = document.getElementById('modal-bg');
+var btn = document.getElementById("modal-btn");
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+</body>
+
+
+<!--
+<form name="login" onsubmit="validate()">
+  <label>First Name </label><input id="fname" type="text" name="fname"/><br />
+  <label>Second Name </label><input type="text" name="lname" /><br />
+  <label>Email</label> <input type="email" name="mail"/><br />
+  <label>Password </label> <input type="password" name="pwd" /><br />
+
+</form> -->
+</html>

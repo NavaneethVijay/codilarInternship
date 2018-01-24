@@ -1,0 +1,41 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+ul {
+  padding: 20px;
+  background-color: rgb(61, 61, 61);
+}
+ul a {
+  display: inline-block;
+  font-family: Helvetica;
+  text-decoration: none;
+  padding: 20px;
+  color: rgb(226, 226, 226);
+}
+ul a:hover{
+  background-color: rgb(55, 55, 55);
+}
+
+ul li{
+  list-style-type:none;
+  color: tomato;
+}
+
+ul li:not(:first-child) {
+  display: none;
+  border-bottom: 1px solid grey;
+}
+.active{
+  color: tomato;
+}
+.ham-menu {
+
+}
+
+.ham-menu:hover{
+  color: white;
+}
+.toggle-menu {
+  float: right;
+}

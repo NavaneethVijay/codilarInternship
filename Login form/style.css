@@ -1,0 +1,392 @@
+/* core css */
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: helvetica;
+  background: #e0e0e0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #212121;
+}
+
+
+/* header section */
+header {
+  display: block;
+}
+.title-bg {
+  height: 200px;
+  background-color: #BDBDBD;
+  display: grid;
+}
+
+.title-bg h2 {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  font-size: 43px;
+  top: -140px;
+  animation-name: up;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes up {
+  to {
+      top:30px;
+  }
+}
+
+
+ #circle{
+   display: inline-block;
+   vertical-align: middle;
+   position: relative;
+   width: 80px;
+   height: 80px;
+   border-radius: 100%;
+   background-color: black;
+ }
+
+/* nav bar */
+header ul{
+  margin: 0;
+  margin-top: -1px;
+  overflow: hidden;
+  border-left:6px solid #0b0b0b;
+  border-right:6px solid #0b0b0b;
+  width: auto;
+  height: 50px;
+  text-align: center;
+  background-color: #BDBDBD;
+}
+header li {
+  display: inline-block;
+  position: relative;
+  margin-left: 30px;
+  padding-top: 15px;
+}
+header a{
+  font-size: 10px;
+}
+header a::after{
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #212121;
+  transition: all 0.5s ease;
+}
+
+header li:hover a::after{
+  width: 100%;
+}
+
+
+/* main section-a */
+#section-a {
+  width: auto;
+  height: 380px;
+}
+#section-a li h2 {
+  position: relative;
+  left: -200px;
+  margin-top: 10px;
+  font-size: 100px;
+  animation-name: right;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes right {
+  to{
+    left: 0px;
+  }
+
+}
+
+#section-a li h2::after{
+  content: '\00bb';
+}
+
+#section-a li{
+  display: inline-block;
+  text-align: center;
+}
+
+#section-a .btn{
+  position: relative;
+  outline: none;
+  top: -20px;
+  left: 80px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: #212121;
+  color: white;
+}
+
+/* modal */
+#modal-bg{
+  z-index: 2px;
+  position: fixed;
+  display: none;
+  top: -20px;
+  width: 100%;
+  height: 110%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#modal{
+  position: relative;
+  left: 10%;
+  top: 10%;
+  width: 320px;
+  height: 500px;
+  background: white;
+}
+
+#modal .grid {
+  overflow: hidden;
+}
+
+#modal h2 {
+  color: rgb(32, 32, 32);
+  text-align: center;
+}
+
+form input[type=email], input[type=password]{
+  color: rgb(28, 28, 28);
+  position: relative;
+  left: 38px;
+  padding-left: 10px;
+  font-family: Helvetica;
+  width: 225px;
+  height: 35px;
+  outline: none;
+  border: 1px solid #c3c3c3;
+  border-radius: 8px;
+  display: block;
+}
+
+/* sign in */
+form input[type=submit]{
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+  left: 60px;
+  top: -4px;
+  border: 1px solid #c3c3c3;
+  outline: none;
+  padding: 10px;
+  width: 150px;
+}
+
+form input[type=submit]:hover{
+  background-color: slateblue;
+  color: white;
+}
+
+form button {
+  border-radius: 5px;
+  font-size: 10px;
+  color: white;
+  position: relative;
+  top: -4px;
+  left: 60px;
+  height: 38px;
+  background-color: slateblue;
+  border: 1px solid slateblue;
+  outline: none;
+  width: 100px;
+  padding: 10px;
+}
+
+form button:hover{
+  background-color: white;
+  color: black;
+}
+
+ hr{
+   margin-top: 30px;
+   margin-left: 60px;
+   width: 200px;
+ }
+
+form #facebook {
+  border-radius: 5px;
+  font-size: 12px;
+  color: white;
+  background-color: slateblue;
+  border: 2px solid slateblue;
+  outline: none;
+  position: relative;
+  left: 60px;
+  top: 30px;
+  width: 200px;
+  padding: 10px;
+}
+form #facebook:hover{
+  background-color: white;
+  color: black;
+}
+
+form label{
+  color: grey;
+  position: relative;
+  left: 60px;
+}
+
+form label a{
+  color: grey;
+}
+
+.form-grid{
+  width: 200px;
+  text-align: center;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+.form-grid label{
+  font-size: 12px;
+}
+
+.line {
+  color: grey;
+  display: none;
+}
+
+
+
+
+/* footer */
+footer div {
+  background-color: #212121;
+  padding-top: 20px;
+  text-align: center;
+  color: #E0E0E0;
+  height: 80px;
+  width: auto;
+  font-size: 10px;
+}
+
+/* tablet */
+
+/* desktop size */
+@media (min-width:1000px) {
+
+  header ul {
+    width: auto;
+    overflow-x: hidden;
+  }
+  header li {
+    left: -50px;
+    padding-left: 20px;
+  }
+  header li a{
+    font-size: 16px;
+  }
+
+  #section-a li button {
+    top: none;
+    margin-top: 150px;
+  }
+  #section-a li h2 {
+    font-size: 150px;
+  }
+
+
+  /* modal */
+  #modal{
+    top: 10%;
+    width: 80%;
+    height: 520px;
+  }
+
+#modal {
+    margin-left: 130px;
+}
+  .grid{
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  #modal-bg .grid{
+      max-width: 900px;
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+
+
+  /* form */
+  form input[type=email], input[type=password]{
+    width: 300px;
+    padding-left: 10px;
+    margin-left: 30px;
+  }
+  form input[type=submit]{
+      width: 100px;
+      left: -30px;
+  }
+
+  form label {
+    left: 10px;
+  }
+
+  form label a{
+    position: relative;
+    left: -25px;
+  }
+
+  form #facebook {
+    left: 5px;
+    width: 200px;
+  }
+
+  form button{
+    left: auto;
+  }
+
+  form input[type=submit]{
+    left: auto;
+  }
+
+  hr{
+    display: none;
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 200px;
+  }
+
+  .form-grid{
+  display: grid;
+  width: auto;
+  grid-template-columns: 1fr 1fr;
+  }
+
+  .form-grid .line {
+    grid-column: 1 / span 2;
+  }
+
+  .form-grid .facebook {
+    grid-column: 1 / span 2;
+  }
+
+  .line {
+    display: block;
+  }
+
+  #image{
+    left: auto;
+    grid-column: 2;
+    height: auto;
+    background: url('cat.png');
+  }
+}

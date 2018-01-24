@@ -1,0 +1,29 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+.section-a {
+  background: url('starwars.jpg');
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: -5;
+  height: 400px;
+  width: auto;
+}
+
+.section-b {
+  position: relative;
+  height: 300px;
+  padding: 20px;
+  background: rgb(245, 245, 245);
+}
+
+.section-b:nth-child(even){
+  z-index: 5;
+}
+
+body{
+  overflow-x: hidden;
+}

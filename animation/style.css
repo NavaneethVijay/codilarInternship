@@ -1,0 +1,288 @@
+* {
+  font-family: helvetica;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+ul {
+  text-align: center;
+  background-color: #E0E0E0;
+  border-left: 10px solid #292929;
+  border-right: 10px solid #292929;
+}
+
+li {
+  position: relative;
+  display: inline-block;
+
+  padding: 20px;
+}
+ul span {
+  font-size: 20px;
+  cursor: pointer;
+  float: right;
+  position: relative;
+  top: 18px;
+  left: -50px;
+  color: #292929;
+  transition: all 0.5s ease;
+}
+ul span:hover{
+  color: #FF7043;
+}
+ul a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #0d0d0d;
+}
+
+li a::before{
+  content: "";
+  display: block;
+  position: relative;
+  top: 22px;
+  width: 0%;
+  height:2px;
+  background-color: #0d0d0d;
+  transition: all 0.5s ease;
+}
+
+li:hover a::before{
+  width: 110%;
+
+}
+
+#intro {
+  max-width: 100%;
+  overflow: hidden;
+  height: 250px;
+  background-color: #E0E0E0;
+}
+
+
+#circle{
+  position: relative;
+  left: 38%;
+  top: -200px;
+  background-color: black;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  animation-name: up;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes up {
+  from{
+      top: -200px;
+  }
+  to {
+      top:35px;
+  }
+}
+#intro h2{
+  font-size: 60px;
+  position: relative;
+  top:120px;
+  left: 28%;
+  animation-name: up_text;
+  animation-duration: 1.8s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+#intro h3{
+  font-size: 60px;
+  position: relative;
+  top:-50px;
+  left: 45%;
+  animation-name: up_text;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes up_text {
+  from{
+    top: -300px;
+  }
+}
+
+#sign_up{
+  height: 450px;
+  width: 100%;
+  background-color: #F5F5F5;
+}
+
+
+#sign_up p {
+  position: relative;
+  top: 180px;
+  display: inline-block;
+  font-size: 100px
+}
+#sign_up p span::before{
+  content: '\00bb';
+}
+
+form {
+  display: block;
+  width: 500px;
+  position: relative;
+  top: 100px;
+  left:10%;
+}
+form span {
+  font-size: 12px;
+  float: left;
+  padding-right: 60px;
+  margin-left: 5px;
+}
+form input[type=checkbox]{
+  float: left;
+}
+
+form input[type=email], input[type=password]{
+  color: rgb(28, 28, 28);
+  padding-left: 20px;
+  font-family: Helvetica;
+  width: 300px;
+  outline: none;
+  height: 35px;
+  border: 1px solid #c3c3c3;
+  border-radius: 8px;
+  background: none;
+  display: block;
+}
+
+form input[type=submit]{
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #c3c3c3;
+  outline: none;
+  position: absolute;
+  margin-top: 80px;
+  padding: 10px;
+  float: left;
+  width: 150px;
+  margin-left: -390px;
+}
+
+form input[type=submit]:hover{
+  background-color: slateblue;
+  color: white;
+}
+
+form button {
+  border-radius: 5px;
+  color: white;
+  background-color: slateblue;
+  border: 1px solid slateblue;
+  outline: none;
+  position: absolute;
+  width: 150px;
+  margin-top: 80px;
+  padding: 10px;
+  float: left;
+  margin-left: -208px;
+}
+form button:hover{
+  background-color: white;
+  color: black;
+}
+
+.modal-btm pre {
+  vertical-align: bottom;
+  color: #c3c3c3;
+  margin-left: 108px;
+}
+
+
+.modal-btm button{
+  padding: 10px;
+  width: 330px;
+  background-color: white;
+  margin-top: 55px;
+  margin-left: 120px;
+  border-radius: 5px;
+  border: 2px solid slateblue;
+  outline: none;
+}
+.modal-btm button:hover{
+  background-color: slateblue;
+  color: white;
+
+}
+
+.button {
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  left: 30px;
+  top: -20px;
+  background-color: #0d0d0d;
+  color: white;
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  transition: all 0.5s ease;
+}
+
+.button:hover{
+  transform: scale(1.1);
+}
+
+.modal-form h2 {
+  color: #424242;
+  margin-top: 10px;
+  position: relative;
+  top: 50px;
+  text-align: center;
+  left: -25%;
+  font-family: "arial";
+}
+
+
+.modal-bg {
+  position: fixed;
+  display: none;
+  top: -20px;
+  width: 100%;
+  height: 110%;
+  background-color: rgba(31, 31, 31,0.8);
+}
+
+.modal{
+  margin-top: 100px;
+  margin-left: 150px;
+  background-color: white;
+  height: 70%;
+  width: 80%;
+  position: relative;
+  align:ceter;
+}
+
+
+
+.modal-form {
+  overflow: hidden;
+  height: 70%;
+}
+
+
+.modal-image {
+  background-color: rgb(28, 28, 28);
+  width: 50%;
+  height: 100%;
+  position: relative;
+  top: -546px;
+  left: 50%;
+}
+
+@media only screen and (max-width: 699px) {
+  .modal-image {
+    display: none;
+  }
+}

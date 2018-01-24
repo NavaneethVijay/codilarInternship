@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>boring company</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+
+  <!-- header section -->
+<header>
+  <div class="title-bg">
+    <h2>the b<span id="circle"></span>ring company</h2>
+  </div>
+  <div>
+      <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">JOBS</a></li>
+      <li><a href="#">FEEDBACK</a></li>
+      <li><a href="#">HAT</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- main section -->
+<main>
+  <section id="section-a">
+    <div class="grid">
+        <li><h2>Sign Up</h2></li>
+        <li><button  id="modal-btn" class="btn">Let's go</a></li>
+    </div>
+  </section>
+
+  <div id="modal-bg">
+    <div id="modal" class="grid">
+
+        <form id="form" name="login">
+            <h2>sign up</h2>
+            <input value="Email"  type="email" name="mail" onfocus="this.value=''"/><br /><br />
+            <input value="password" type="password" name="pwd" onfocus="this.value=''"/><br />
+
+            <div class="form-grid">
+              <p>
+                <label><input type="checkbox" />Keep me logged in</label>
+              </p>
+              <p>
+                <label><a href="#">forgot password or email?</a></label>
+              </p>
+              <p>
+                <button>LOGIN</button>
+              </p>
+              <p>
+                <input type="submit" value="SIGN UP" onclick="return validate() " />
+              </p>
+              <hr />
+              <p class="line">
+              _________________    OR   __________________
+              </p>
+              <p class="facebook">
+                <button id="facebook">connect with <b>facebook</b></button>
+              </p>
+            </div>
+          </form>
+      <div id="image" class="grid">
+
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- footer -->
+<footer>
+  <div>
+    <h4>boringcompany.com</h4>
+  </div>
+</footer>
+
+<script>
+
+/* validate function*/
+function validate() {
+  var mail = document.login.mail.value;
+  var password = document.login.pwd.value;
+
+  if(password.length < 8){
+    window.confirm("Password should contain min 8 characters");
+    return false;
+  }
+
+  if(mail == "" || mail.checkValidity()){
+    alert("Mail ID can not be empty");
+    return false;
+  }
+}
+
+/*modal script */
+var modal = document.getElementById('modal-bg');
+var btn = document.getElementById("modal-btn");
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+</script>
+
+
+
+</body>
+</html>
