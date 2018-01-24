@@ -19,7 +19,7 @@ ul a:hover{
 
 ul li{
   list-style-type:none;
-  color: slateblue;
+  color: tomato;
 }
 
 ul li:not(:first-child) {
