@@ -18,19 +18,17 @@ ul a:hover{
 }
 
 ul li{
+  display: inline-block;
   list-style-type:none;
   color: tomato;
 }
 
 ul li:not(:first-child) {
-  text-align: center;
+  text-align: left;
   display: none;
 }
 .active{
   color: tomato;
-}
-.ham-menu {
-
 }
 
 .ham-menu:hover{
@@ -38,4 +36,65 @@ ul li:not(:first-child) {
 }
 .toggle-menu {
   float: right;
+}
+
+/* end of nav for phone */
+.section-a {
+  background-color: tomato;
+  width: auto;
+  height: 300px;
+}
+
+.section-a p {
+  padding: 20px;
+  font-family: Helvetica;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.section-b {
+  width: auto;
+  height: 300px;
+}
+
+.section-b .mid-left {
+  float: left;
+  background-color: rgb(218, 218, 218);
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.section-b .mid-right {
+  float: left;
+  background-color: rgb(232, 230, 230);
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+
+
+
+
+
+/* end of nav for phone */
+@media (min-width: 700px) {
+  .toggle-menu {
+    display: none;
+  }
+
+  ul li:not(:first-child) {
+    display: inline-block;
+    text-align: center;
+  }
+  .section-b .mid-left{
+    width: 50%;
+    height: 500px;
+  }
+  .section-b .mid-right{
+    width: 50%;
+    height: 500px;
+  }
+
 }
