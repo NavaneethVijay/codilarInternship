@@ -12,25 +12,29 @@
       </div>
       <div class="nav-container">
         <ul>
-          <li>
-            <ul>
-            <li>search <span id="search"></span></li>
-            <li>account <span id="account"></span></li>
-            <li>cart <span id="cart"></span></li>
-          </ul>
-        </li>
-        <li> <span id="logo-text"></span> </li>
-        <li>
-          <ul class="navbar">
-            <li>NEW ARRIVALS</li>
-            <li>ESSENTIALS</li>
-            <li>WOMEN</li>
-            <li>MEN</li>
-            <li>SALE</li>
-            <li>OUR STORY</li>
-            <li>CAMPAIGNS</li>
-          </ul>
+
+          <li id="nav-left">
+            <ul class="navbar">
+              <li>NEW ARRIVALS</li>
+              <li>ESSENTIALS</li>
+              <li>WOMEN</li>
+              <li>MEN</li>
+              <li>SALE</li>
+              <li>OUR STORY</li>
+              <li>CAMPAIGNS</li>
+            </ul>
+          </li>
+
+        <li> <img id="nav-logo" src="images/logo-text.png" /></span> </li>
+
+        <li id="nav-right">
+          <ul>
+          <li><img id="search" src="images/search.png" /></li>
+          <li><img id="account" src="images/account.png" /></li>
+          <li><img id="cart" src="images/cart.png" /></li>
+        </ul>
       </li>
+
         </ul>
       </div>
     </header>
@@ -38,51 +42,67 @@
       <img src="images/main-img1.png" alt="main-img1" />
       <div class="product-details">
         <p>
-          SHEER JERSEY OFF SHOULDER TOP
+          SHEER JERSEY OFF SHOULDER TOP <br />
+          $110
         </p>
         <p>
             COLOR: WHITE
         </p>
-        <p>
-            <span id="white-dot"></span><span id="black-dot"></span>
+        <p id="colors-dots">
+            <div id="white-dot">
+                <div id="black-dot"></div>
+            </div>
         </p>
         <p>
             SIZE: SELECT A SIZE
         </p>
-        <p class="size-details">
-          <li>XS</li>
-          <li>S</li>
-          <li>M</li>
-          <li>L</li>
-          <li>XL</li>
+        <p>
+          <ul class="size-details">
+            <li>XS</li>
+            <li class="size-active">S</li>
+            <li>M</li>
+            <li>L</li>
+            <li>XL</li>
+          </ul>
+          <a href="#">SIZE GUIDE</a>
         </p>
         <p>
           <button class="add-bag">ADD TO BAG</button>
-          <h5>FREE SHIPPING - EASY RETURNS</h5>
-          details
-          <ul>
-            <li>Relaxed Fit</li>
-            <li>Made in the USA</li>
-            <li>Model is 5'9 wearing size S</li>
-            <li>100% Tencel</li>
-            <li>19" Shoulder to hem</li>
-            <li>Dry Clean Recommended. Machine wash inside out gentle cycle, cold water, no bleach, Tumble dry low/ Cool iron.</li>
-            <li>#KR1445W</li>
-          </ul>
+          <div class="product-guide">
+            <h5>FREE SHIPPING - EASY RETURNS</h5>
+            <h5>DETAILS</h5>
+            <ul>
+              <li>Relaxed Fit</li>
+              <li>Made in the USA</li>
+              <li>Model is 5'9 wearing size S</li>
+              <li>100% Tencel</li>
+              <li>19" Shoulder to hem</li>
+              <li>Dry Clean Recommended. Machine wash inside out gentle cycle, cold water, no bleach, Tumble dry low Cool iron.</li>
+              <li>#KR1445W</li>
+            </ul>
+          </div>
         </p>
       </div>
     </section>
     <section class="section-b">
       <img src="images/main-img2.png" alt="main-img2" />
     </section>
+    <div class="suggestion-line">
+      <h4>YOU ALSO MIGHT LIKE</h4>
+    </div>
     <section class="section-c">
       <div class="suggested-images">
         <img src="images/might-like1.png" alt="might-like" />
         <img src="images/might-like2.png" alt="might-like" />
-        <img src="images/might-like3.png" alt="might-like" />
+        <!-- <img src="images/might-like3.png" alt="might-like" />  -->
       </div>
     </section>
-    <section class="social">
+    <div class="social-line">
+      <hr>
+      <h4>LET'S GET SOCIAL</h4>
+      <h3>@instagram</h3>
+    </div>
+    <section class="section-d">
       <div class="social-images">
         <img src="images/insta1.png" alt="insta1" />
         <img src="images/insta2.png" alt="insta2" />
@@ -90,13 +110,64 @@
         <img src="images/insta4.png" alt="insta4" />
       </div>
       <div class="social-links">
+        <ul>
+          <li> stay connected</li>
+          <li><img src="images/social/insta.png" alt="instagram"></li>
+          <li><img src="images/social/facebook.png" alt="facebook"></li>
+          <li><img src="images/social/pintrest.png" alt="pintrest"></li>
+          <li><img src="images/social/twitter.png" alt="twitter"></li>
+          <li><img src="images/social/youtube.png" alt="youtube"></li>
+        </ul>
+      </div>
+      <hr>
+      <div class="newsletter">
         <p>
-          stay connected
+          sign up for our mailing list
         </p>
-        <img src="images/social/insta.png" alt="">
-
+        <p>
+          <input type="text" name="" placeholder="your email address" value="">
+          <input type="submit" name="" value="sign up">
+        </p>
       </div>
     </section>
+    <hr>
+    <section class="section-e">
+      <div class="about">
+        <h4>ABOUT THREE DOTS</h4>
+        <li> <a href="#">About Us</a> </li>
+        <li> <a href="#">Contact</a> </li>
+      </div>
+      <div class="my-account">
+        <h4>MY ACCOUNT</h4>
+        <li> <a href="#">account</a> </li>
+        <li> <a href="#">Order History</a> </li>
+        <li> <a href="#">My Cart</a> </li>
+      </div>
+      <div class="customer-service">
+        <h4>CUSTOMER SERVICE</h4>
+        <li> <a href="#">Shipping Information</a> </li>
+        <li> <a href="#">Returns</a> </li>
+        <li> <a href="#">Gift Cards</a></li>
+        <li> <a href="#">Wholesale</a> </li>
+        <li> <a href="#">FAQ</a> </li>
+      </div>
+      <div class="store">
+        <ul>
+          <li> <h4>STORE LOCATOR</h4> </li>
+        </ul>
+      </div>
+      <div class="to-talk">
+        <p>NEED TO TALK?</p>
+        <p>GIVE US A CALL AT 1-888-311-3687</p>
+      </div>
+    </section>
+    <hr>
+
+    <footer>
+      <a href="#"><img id="foot-logo" src="images/logo-text.png" alt=""></a>
+      <p>Privacy Policy | Terms of Use</p>
+      <p>&copy;2017 EL LLC. All Rights Reserved.</p>
+    </footer>
 
   </body>
 </html>

@@ -2,3 +2,350 @@
   padding: 0px;
   margin: 0px;
 }
+
+body{
+  font-family: Helvetica;
+
+}
+
+a{
+  text-decoration: none;
+  color: rgb(10, 10, 10);
+}
+
+
+
+
+
+
+
+
+
+
+/* global style */
+
+
+/* nav bar */
+.top-bar{
+  padding-top: 10px;
+  font-size: 13px;
+  text-align: center;
+  background-color: rgb(224, 223, 223);
+  color: rgb(20, 20, 20);
+  width: 100%;
+  height: 20px;
+}
+.nav-container li{
+  display: inline-block;
+}
+#nav-left{
+  display: none;
+}
+#nav-logo{
+  position: relative;
+  left: 50%;
+  top: 20px;
+  float: left;
+  background-repeat: no-repeat;
+  width: 196px;
+  height: 28px;
+}
+#nav-right{
+  float: right;
+}
+
+#account{
+  display: none;
+}
+
+#search, #cart{
+  float: right;
+  position: relative;
+  top: 26px;
+  left: -15px;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+/* navbar */
+
+
+/* section-a styling */
+.section-a img{
+  position: relative;
+  z-index: -20;
+  top: 40px;
+  width: 99%;
+}
+
+.product-details{
+  margin-top: 50px;
+  padding-left: 20px;
+  display: block;
+}
+.product-details p{
+  font-size: 20px;
+}
+.product-details p:not(:first-child){
+  font-size: 13px;
+}
+
+#white-dot{
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 3px solid grey;
+  background: white;
+  position: relative;
+  left: 20px;
+}
+
+#black-dot{
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: black;
+  position: relative;
+  left: 50px;
+}
+
+.product-details p{
+  padding: 5px;
+}
+/* size styling */
+
+
+.size-details li{
+  text-align: center;
+  margin-left: 4px;
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  padding: 5px;
+  width: 20px;
+}
+
+.size-active {
+    border: 1px solid grey;
+    border-radius: 100%;
+}
+
+.section-a a{
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+.add-bag {
+  width: 390px;
+  height: 50px;
+  outline: none;
+  border: none;
+  margin-left: -15px;
+  background-color: rgb(98, 98, 98);
+  color: white;
+}
+.add-bag:hover{
+  background-color: rgb(45, 45, 45);
+}
+/* size styling ends */
+
+
+/* SHIPPING details */
+
+.product-guide h5{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+.product-guide ul{
+  padding-top: 10px;
+  padding-left: 16px;
+}
+.product-guide li {
+  padding: 4px;
+}
+/* shipping details */
+
+
+/* section-b hidden in mobile view */
+.section-b {
+  display: none;
+}
+
+/* section-c ------ you might like ----- */
+.suggestion-line hr {
+  width: 25%;
+  margin-top: 20px;
+}
+
+.suggestion-line h4::after{
+  content: " ";
+  width: 20%;
+  margin-left: 5%;
+  display: inline-block;
+  position: absolute;
+  margin-top: 6px;
+  border-bottom: 1px solid rgb(113, 111, 111);
+}
+
+.suggestion-line h4{
+  color: rgb(113, 111, 111);
+  padding-top: 35px;
+  text-align: center;
+  font-weight: lighter;
+  margin-top: -10px;
+}
+
+.suggestion-line h4::before{
+  content: " ";
+  width: 20%;
+  display: block;
+  margin-left: 5%;
+  margin-top: 6px;
+  position: absolute;
+  border-bottom: 1px solid rgb(113, 111, 111);
+}
+.suggestion-line span {
+  float: left;
+}
+
+.suggested-images img{
+  display: inline-block;
+  margin-left: 3%;
+  padding: 5px;
+  height: auto;
+  width: 43%;
+}
+
+
+/* section-d  social meadia photos */
+
+hr{
+  color: rgb(113, 111, 111);
+  margin-top: 4%;
+  margin-left: 3%;
+  width: 90%;
+}
+.social-line h4{
+  text-align: center;
+  font-weight: lighter;
+  color: rgb(113, 111, 111);
+  padding: 5%;
+}
+.social-line h3{
+  text-align: center;
+  font-weight: lighter;
+  color: rgb(113, 111, 111);
+  margin-top: -10px;
+  font-size: 16px;
+  padding-bottom: 5%;
+}
+
+.social-images img{
+  margin-left: 10px;
+  width: 20%;
+
+}
+
+/* stay connected */
+.social-links ul {
+  text-align: center;
+  padding: 10px;
+}
+.social-links li:first-child{
+  font-size: 14px;
+  font-weight: lighter;
+  position: relative;
+  top: -10px;
+}
+.social-links li {
+  list-style: none;
+  padding: 5px;
+  display: inline-block;
+}
+
+.social-links img {
+  padding-top: 10px;
+  width: 23px;
+  height: 24px;
+}
+
+/* stay connected */
+
+
+/* newsletter */
+
+.newsletter {
+  padding: 20px;
+}
+
+.newsletter p {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 25px;
+  padding: 2%;
+}
+
+.newsletter input{
+  text-align: center;
+  display: block;
+  height: 30px;
+}
+
+.newsletter input[type=text]{
+  width: 100%;
+  border: 1px solid rgb(111,111,111);
+}
+.newsletter input[type=submit]{
+  margin-top: 3%;
+  width: 100%;
+  background: black;
+  color: white;
+  border: none;
+  outline: none;
+}
+.newsletter input[type=submit]:hover{
+    background: rgb(26, 26, 26);
+}
+
+
+/* section-e footer */
+.section-e h4 {
+  padding-top: 5%;
+  text-align: center;
+  font-size: 12px;
+}
+
+.section-e li {
+  padding-top: 2%;
+  text-align: center;
+  list-style: none;
+  font-size: 11px;
+}
+.store h4{
+  padding-bottom: 5%;
+}
+.to-talk p{
+  font-size: 12px;
+  font-weight:bold;
+  text-align: center;
+}
+
+
+/* footer  */
+footer{
+  padding-bottom: 5%;
+}
+#foot-logo {
+  padding: 3%;
+  position: relative;
+  left: 30%;
+  width: 130px;
+  height: 20px;
+}
+footer p {
+  text-align: center;
+  font-size: 12px;
+}
