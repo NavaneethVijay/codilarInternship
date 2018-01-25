@@ -1,8 +1,9 @@
 /* core css */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 body{
   margin: 0px;
   padding: 0px;
-  font-family: helvetica;
+  font-family: Verdana;
   background: #e0e0e0;
 }
 
@@ -136,7 +137,7 @@ header li:hover a::after{
 #modal-bg{
   z-index: 2px;
   position: fixed;
-  display: none;
+  display: block;
   top: -20px;
   width: 100%;
   height: 110%;
@@ -148,7 +149,7 @@ header li:hover a::after{
   left: 10%;
   top: 10%;
   width: 320px;
-  height: 500px;
+  height: 600px;
   background: white;
 }
 
@@ -157,8 +158,11 @@ header li:hover a::after{
 }
 
 #modal h2 {
-  color: rgb(32, 32, 32);
+  position: relative;
+  top: 50px;
+  color: rgb(61, 61, 61);
   text-align: center;
+  font-family: Open Sans;
 }
 
 form input[type=email], input[type=password]{
@@ -172,76 +176,88 @@ form input[type=email], input[type=password]{
   outline: none;
   border: 1px solid #c3c3c3;
   border-radius: 8px;
+  top: 80px;
   display: block;
 }
 
 /* sign in */
 form input[type=submit]{
-  background-color: white;
+  background-color: slateblue;
+  color: white;
+   font-size: 14px;
   border-radius: 5px;
   position: relative;
-  left: 60px;
+  left: 40px;
   top: -4px;
   border: 1px solid #c3c3c3;
   outline: none;
   padding: 10px;
-  width: 150px;
+  width: 230px;
 }
 
 form input[type=submit]:hover{
-  background-color: slateblue;
-  color: white;
+  background-color: white;
+  color: slateblue;
 }
 
 form button {
   border-radius: 5px;
   font-size: 10px;
-  color: white;
+  color: grey;
+  font-size: 14px;
   position: relative;
   top: -4px;
-  left: 60px;
+  left: 40px;
   height: 38px;
-  background-color: slateblue;
+  background-color: white;
   border: 1px solid slateblue;
   outline: none;
-  width: 100px;
+  width: 230px;
   padding: 10px;
 }
 
 form button:hover{
-  background-color: white;
-  color: black;
+  background-color: slateblue;
+  color: white;
 }
 
-form input[type=checkbox]{
-  width: 20px;
-}
 
  hr{
+   position: relative;
+   top: 60px;
    margin-top: 30px;
-   margin-left: 60px;
+   margin-left: 55px;
    width: 200px;
  }
 
 form #facebook {
   border-radius: 5px;
   font-size: 12px;
-  color: white;
-  background-color: slateblue;
+  color: slateblue;
+  background-color: white;
   border: 2px solid slateblue;
   outline: none;
   position: relative;
-  left: 60px;
-  top: 30px;
-  width: 200px;
+  left: 30px;
+  top: 80px;
+  width: 250px;
   padding: 10px;
 }
 form #facebook:hover{
-  background-color: white;
-  color: black;
+  background-color: slateblue;
+  color: white;
 }
 
+#facebook #fb{
+  font-size: 15px;
+}
+#facebook #fb::before{
+  content: 'CONNECT WITH ';
+  font-size: 9px;
+  vertical-align: middle;
+}
 form label{
+  vertical-align: middle;
   color: grey;
   position: relative;
   left: 60px;
@@ -252,12 +268,14 @@ form label a{
 }
 
 .form-grid{
+  justify-content: center;
   width: 200px;
   text-align: center;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
 }
 .form-grid label{
+    padding-top: 20px;
   font-size: 12px;
 }
 
@@ -266,7 +284,49 @@ form label a{
   display: none;
 }
 
+.c-box {
+  position: relative;
+  top: 60px;
+}
+.row-2 {
+  position: relative;
+  top: 80px;
+}
 
+/* check box */
+
+.regular-checkbox {
+  -webkit-appearance: none;
+  background-color: #fafafa;
+  border: 1px solid #cacece;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  padding: 7px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  left: -5px;
+}
+
+.regular-checkbox:checked {
+  background-color: #e9ecee;
+  border: 1px solid #adb8c0;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  color: #99a1a7;
+  outline: none;
+  position: relative;
+  top: 5px;
+  left: -5px;
+}
+.regular-checkbox:checked:after {
+  content: '\2714';
+  font-size: 14px;
+  position: absolute;
+  top: -3px;
+  left: 2px;
+  color: #99a1a7;
+}
+/* check box */
 
 
 /* footer */
@@ -305,17 +365,18 @@ footer div {
     font-size: 150px;
   }
 
+  #modal h2 {
+    position: relative;
+    top: 40px;
+  }
 
   /* modal */
   #modal{
     top: 10%;
     width: 80%;
-    height: 520px;
-  }
-
-#modal {
+    height: 600px;
     margin-left: 130px;
-}
+  }
   .grid{
     max-width: 1000px;
     display: grid;
@@ -331,17 +392,16 @@ footer div {
 
   /* form */
   form input[type=email], input[type=password]{
-    width: 300px;
+    left: 55px;
+    width: 330px;
     padding-left: 10px;
-    margin-left: 30px;
   }
   form input[type=submit]{
-      width: 100px;
-      left: -30px;
+      width: 150px;
   }
 
   form label {
-    left: 10px;
+    left: 15px;
   }
 
   form label a{
@@ -349,13 +409,52 @@ footer div {
     left: -25px;
   }
 
+
+  /* check box */
+  .regular-checkbox {
+  	display: inline-block;
+  	position: relative;
+    top: 5px;
+    left: -5px;
+
+  }
+
+  .regular-checkbox:checked {
+    outline: none;
+    position: relative;
+    top: 5px;
+    left: -5px;
+  }
+  .regular-checkbox:checked:after {
+    position: absolute;
+    top: -2px;
+    left: 2px;
+  	color: #99a1a7;
+  }
+
+  /* check box */
+  .c-box{
+    position: relative;
+    top: 20px;
+    left: 50px;
+  }
+  .c-box a {
+    position: relative;
+    top: 3px;
+    left: -36px;
+  }
+
+
   form #facebook {
+    padding-bottom: 20px;
+    top: 10px;
     left: 5px;
-    width: 200px;
+    width: 350px;
   }
 
   form button{
-    left: auto;
+    width: 150px;
+    left: 20px;
   }
 
   form input[type=submit]{
@@ -370,9 +469,14 @@ footer div {
   }
 
   .form-grid{
-  display: grid;
-  width: auto;
-  grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    position: relative;
+    top: 50px;
+    left: -10px;
+    display: grid;
+    width: auto;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
   }
 
   .form-grid .line {
@@ -385,8 +489,20 @@ footer div {
 
   .line {
     display: block;
+    position: relative;
+    left: 40px;
   }
 
+#or {
+  padding: 20px;
+  position: relative;
+  top: 5px;
+}
+
+.row-2 {
+  position: relative;
+  top: 20px;
+}
   #image{
     left: auto;
     grid-column: 2;

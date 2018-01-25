@@ -37,29 +37,29 @@
     <div id="modal" class="grid">
 
         <form id="form" name="login">
-            <h2>sign up</h2>
-            <input value="Email"  type="email" name="mail" onfocus="this.value=''"/><br /><br />
-            <input value="password" type="password" name="pwd" onfocus="this.value=''"/><br />
+            <h2>SIGN IN</h2>
+            <input placeholder="Email"  type="email" name="mail"/><br /><br />
+            <input placeholder="Password" type="password" name="pwd"/><br />
 
             <div class="form-grid">
-              <p>
-                <label><input type="checkbox" />Keep me logged in</label>
+              <p class="c-box">
+                <label><input class="regular-checkbox" type="checkbox" />Keep me logged in</label>
               </p>
-              <p>
+              <p class="c-box">
                 <label><a href="#">forgot password or email?</a></label>
               </p>
-              <p>
-                <button>LOGIN</button>
+              <p class="row-2">
+                <button>REGISTER</button>
               </p>
-              <p>
-                <input type="submit" value="SIGN UP" onclick="return validate() " />
+              <p class="row-2">
+                <input type="submit" value="SIGN IN" onclick="return validate() " />
               </p>
               <hr />
               <p class="line">
-              _________________    OR   __________________
+              <label>__________________  <span id="or">OR</span>  ___________________</label>
               </p>
               <p class="facebook">
-                <button id="facebook">connect with <b>facebook</b></button>
+                <button id="facebook"><b id="fb">facebook</b></button>
               </p>
             </div>
           </form>
