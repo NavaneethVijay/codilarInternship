@@ -213,6 +213,10 @@ form button:hover{
   color: black;
 }
 
+form input[type=checkbox]{
+  width: 20px;
+}
+
  hr{
    margin-top: 30px;
    margin-left: 60px;
