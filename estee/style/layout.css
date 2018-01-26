@@ -13,13 +13,9 @@ a{
   color: rgb(10, 10, 10);
 }
 
-
-
-
-
-
-
-
+ul li {
+  list-style: none;
+}
 
 
 /* global style */
@@ -35,34 +31,50 @@ a{
   width: 100%;
   height: 20px;
 }
-.nav-container li{
-  display: inline-block;
+.navbar{
+  margin-top: 20px;
+  margin-left: 10px;
 }
-#nav-left{
+.navbar li #ham-toggle img{
+  height: 20px;
+  width: 30px;
+}
+
+.navbar li:not(:first-child){
+  padding: 10px;
+  background-color: rgb(241, 241, 241);
   display: none;
+}
+
+#nav-left{
+  display: block;
 }
 #nav-logo{
   position: relative;
-  left: 50%;
-  top: 20px;
+  left: 30%;
+  top: -10px;
   float: left;
+  margin-top: -20px;
   background-repeat: no-repeat;
   width: 196px;
   height: 28px;
 }
-#nav-right{
-  float: right;
+
+#nav-right li{
+  float: left;
 }
+
 
 #account{
   display: none;
 }
 
 #search, #cart{
-  float: right;
   position: relative;
-  top: 26px;
-  left: -15px;
+  left: 150px;
+  top: -15px;
+  margin-top: -20px;
+  padding: 5px;
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
@@ -87,7 +99,7 @@ a{
   font-size: 20px;
 }
 .product-details p:not(:first-child){
-  font-size: 13px;
+  font-size: 15px;
 }
 
 #white-dot{
@@ -114,6 +126,10 @@ a{
 }
 /* size styling */
 
+.size-details li p {
+  margin-top: -3px;
+  font-size: 25px;
+}
 
 .size-details li{
   text-align: center;
@@ -123,7 +139,8 @@ a{
   margin-right: 30px;
   margin-bottom: 20px;
   padding: 5px;
-  width: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 .size-active {
@@ -142,7 +159,7 @@ a{
   outline: none;
   border: none;
   margin-left: -15px;
-  background-color: rgb(98, 98, 98);
+  background-color: rgb(20, 20, 20);
   color: white;
 }
 .add-bag:hover{
@@ -164,6 +181,7 @@ a{
   padding-left: 16px;
 }
 .product-guide li {
+  list-style: disc;
   padding: 4px;
 }
 /* shipping details */
@@ -175,9 +193,11 @@ a{
 }
 
 /* section-c ------ you might like ----- */
-.suggestion-line hr {
-  width: 25%;
-  margin-top: 20px;
+.section-c hr {
+  color: rgb(113, 111, 111);
+  margin-left: 3%;
+  margin-top: 6%;
+  width: 90%;
 }
 
 .suggestion-line h4::after{
@@ -213,22 +233,23 @@ a{
 
 .suggested-images img{
   display: inline-block;
-  margin-left: 3%;
-  padding: 5px;
+  margin-top: 5%;
+  margin-left: 2%;
   height: auto;
-  width: 43%;
+  width: 46%;
 }
 
 
 /* section-d  social meadia photos */
 
-hr{
+.section-d hr{
   color: rgb(113, 111, 111);
-  margin-top: 4%;
   margin-left: 3%;
+  margin-top: 6%;
   width: 90%;
 }
 .social-line h4{
+  font-size: 22px;
   text-align: center;
   font-weight: lighter;
   color: rgb(113, 111, 111);
@@ -239,13 +260,14 @@ hr{
   font-weight: lighter;
   color: rgb(113, 111, 111);
   margin-top: -10px;
-  font-size: 16px;
+  font-size: 18px;
   padding-bottom: 5%;
 }
 
 .social-images img{
   margin-left: 10px;
   width: 20%;
+  height: 100px;
 
 }
 
@@ -255,21 +277,20 @@ hr{
   padding: 10px;
 }
 .social-links li:first-child{
-  font-size: 14px;
+  font-size: 18px;
   font-weight: lighter;
   position: relative;
-  top: -10px;
+  top: -15px;
 }
 .social-links li {
   list-style: none;
-  padding: 5px;
   display: inline-block;
 }
 
 .social-links img {
   padding-top: 10px;
-  width: 23px;
-  height: 24px;
+  padding-left: 5px;
+
 }
 
 /* stay connected */
@@ -284,14 +305,14 @@ hr{
 .newsletter p {
   text-align: center;
   font-weight: lighter;
-  font-size: 25px;
+  font-size: 23px;
   padding: 2%;
 }
 
 .newsletter input{
   text-align: center;
   display: block;
-  height: 30px;
+  height: 40px;
 }
 
 .newsletter input[type=text]{
@@ -312,6 +333,14 @@ hr{
 
 
 /* section-e footer */
+
+.section-e hr {
+  color: rgb(113, 111, 111);
+  margin-left: 3%;
+  margin-top: -1%;
+  width: 90%;
+}
+
 .section-e h4 {
   padding-top: 5%;
   text-align: center;
@@ -336,14 +365,20 @@ hr{
 
 /* footer  */
 footer{
-  padding-bottom: 5%;
+  padding-bottom: 3%;
+}
+footer hr {
+  color: rgb(113, 111, 111);
+  margin-left: 3%;
+  margin-top: 5%;
+  width: 90%;
 }
 #foot-logo {
   padding: 3%;
   position: relative;
   left: 30%;
-  width: 130px;
-  height: 20px;
+  width: 120px;
+  height: 15px;
 }
 footer p {
   text-align: center;
@@ -358,6 +393,6 @@ footer p {
 
 @media (min-width:800px) {
 
-  
+
 
 }
