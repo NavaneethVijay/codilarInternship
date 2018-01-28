@@ -5,6 +5,10 @@
     <title>Estee Lauder</title>
     <link rel="stylesheet" href="style/layout.css">
       <meta name="viewport" content="width=device-width,initial-scale=1">
+      <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -13,33 +17,45 @@
       </div>
       <div class="nav-container">
 
-          <div id="nav-left">
-            <ul class="navbar">
-              <li> <a id="ham-toggle" href="#"><img src="images/ham-menu.png" alt=""></a> </li>
-              <li>NEW ARRIVALS</li>
-              <li>ESSENTIALS</li>
-              <li>WOMEN</li>
-              <li>MEN</li>
-              <li>SALE</li>
-              <li>OUR STORY</li>
-              <li>CAMPAIGNS</li>
-            </ul>
-          </div>
+        <div id="nav-right">
+            <ul>
+            <li><span class="nav-text">CART</span><img id="cart" src="images/cart.png" /></li>
+            <li><span class="nav-text" >ACCOUNT</span><img id="account" src="images/account.png" /></li>
+            <li> <span class="nav-text">SEARCH</span> <img id="search" src="images/search.png" /></li>
+
+          </ul>
+        </div>
 
         <div> <img id="nav-logo" src="images/logo-text.png" /></span> </div>
 
-        <div id="nav-right">
-          <ul>
-          <li><img id="search" src="images/search.png" /></li>
-          <li><img id="account" src="images/account.png" /></li>
-          <li><img id="cart" src="images/cart.png" /></li>
-        </ul>
-      </div>
+        <div id="nav-left">
+          <ul class="navbar">
+            <li> <a id="ham-toggle" href="#"><img src="images/ham-menu.png" alt=""></a> </li>
+            <li>NEW ARRIVALS</li>
+            <li>ESSENTIALS</li>
+            <li>WOMEN</li>
+            <li>MEN</li>
+            <li>SALE</li>
+            <li>OUR STORY</li>
+            <li>CAMPAIGNS</li>
+          </ul>
+        </div>
+
+
 
       </div>
     </header>
+
+
     <section class="section-a">
-      <img src="images/main-img1.png" alt="main-img1" />
+      <div class="desktop-images">
+        <img src="images/main-img2.png" alt="main-img2" />
+        <img src="images/main-img3.png" alt="main-img3" />
+        <img src="images/main-img4.png" alt="main-img4" />
+      </div>
+      <div class="main-img">
+        <img src="images/main-img1.png" alt="main-img1" />
+      </div>
       <div class="product-details">
         <p>
           SHEER JERSEY OFF SHOULDER TOP <br />
@@ -85,7 +101,7 @@
       </div>
     </section>
     <section class="section-b">
-      <img src="images/main-img2.png" alt="main-img2" />
+      <img src="images/main-img3.png" alt="main-img2" />
     </section>
     <div class="suggestion-line">
       <h4>YOU ALSO MIGHT LIKE</h4>
@@ -94,11 +110,34 @@
       <div class="suggested-images">
         <img src="images/might-like1.png" alt="might-like" />
         <img src="images/might-like2.png" alt="might-like" />
-        <!-- <img src="images/might-like3.png" alt="might-like" />  -->
+        <img id="hide-in-mob" src="images/might-like3.png" alt="might-like" />
       </div>
-      <hr>
+      <div class="fig-captions">
+        <p>SANDED JERSEY MUSCLE TANK <br> $70.00 </p>
+        <p>HERITAGE KNIT CARGIGAN <br> $70.00 </p>
+        <p>SLEVELESS COWL TANK <br> $70.00 </p>
+
+      </div>
+    </section>
+    <section class="testominial">
+      <div class="test-bg">
+        <div class="left-test">
+          <p >
+            Our Mission <br> <br>
+  As a company, we're a lot like you, seasoned enough to know what you're looking for, stylish enough to look for what's next. We believe no woman wants to be basic, but every woman wants great basics. With the luxury of comfort and effortless style, we go "Beyond the Basics," because you're anything but. Some things never change, but there's always more to come...
+          </p>
+        </div>
+        <div class="right-test">
+          <p>
+            Local Production <br> <br>
+  As a Southern California-based brand, Three Dots prides itself on being made in the USA. With 95% of our clothing created at our corporate office, we believe in transparency every step of the way. Each piece created and produced in-house allows for hands-on care from first sketch to last stitch. We like to know where the clothes we love come from and feel like you should know too.
+          </p>
+        </div>
+      </div>
+    <hr>
     </section>
     <div class="social-line">
+      <hr>
       <h4>LET'S GET SOCIAL</h4>
       <h3>@instagram</h3>
     </div>
@@ -111,7 +150,7 @@
       </div>
       <div class="social-links">
         <ul>
-          <li> stay connected</li>
+          <li> <p> stay connected</p> </li>
           <li><img src="images/social/insta.png" alt="instagram"></li>
           <li><img src="images/social/facebook.png" alt="facebook"></li>
           <li><img src="images/social/pintrest.png" alt="pintrest"></li>
@@ -121,13 +160,17 @@
       </div>
       <hr>
       <div class="newsletter">
-        <p>
-          sign up for our mailing list
-        </p>
-        <p>
-          <input type="text" name="" placeholder="your email address" value="">
-          <input type="submit" name="" value="sign up">
-        </p>
+        <div class="news-text">
+          <p>
+            sign up for our mailing list
+          </p>
+        </div>
+        <div class="letter-form">
+          <p>
+            <input type="text" name="" placeholder="your email address" value="">
+            <p><input type="submit" name="" value="sign up"></p>
+          </p>
+        </div>
       </div>
     </section>
 
@@ -169,6 +212,17 @@
       <p>Privacy Policy | Terms of Use</p>
       <p>&copy;2017 EL LLC. All Rights Reserved.</p>
     </footer>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      var view = $(".navbar li:not(:first-child)").css("display");
+      console.log(view);
+      $('#ham-toggle').click(function(){
+        $(".navbar li:not(:first-child)").toggle(800,"swing");
+      });
+    });
+
+    </script>
 
   </body>
 </html>
