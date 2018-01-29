@@ -1,11 +1,11 @@
-* {
-  padding: 0px;
-  margin: 0px;
-}
+
+  * {
+    padding: 0px;
+    margin: 0px;
+  }
 
 body{
-  font-family: Helvetica;
-
+  font-family: "Helvetica Neue",Arial,sans-serif;
 }
 
 a{
@@ -297,6 +297,10 @@ ul li {
 }
 
 /* stay connected */
+.social-links {
+  position: relative;
+  top: -5px;
+}
 .social-links ul {
   text-align: center;
   padding: 10px;
@@ -651,7 +655,7 @@ footer p {
       font-weight: lighter;
       color: rgb(34, 34, 34);
       line-height: 26px;
-      margin-top: 5px;
+      margin-top: -5px;
       margin-left: 30%;
       width: 50%;
       font-size: 18px;
@@ -700,7 +704,7 @@ footer p {
       width: 20%;
     }
     .news-text p{
-    font-size: 18px;
+    font-size: 17px;
     position: relative;
     top: -25px;
     left: 20px;
