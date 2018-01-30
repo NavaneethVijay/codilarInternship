@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
     <title>Image Gallery</title>
 </head>
 <body>
-    
+    <div id="one"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div id="five" class="five"></div>
+    <div></div>
+    <div ></div>
+
+
+
+    <script>
+        $(document).ready(function(){
+
+            var DocHeight = $(window).height();
+            var newDocHeight = DocHeight * 0.50;
+            console.log(newDocHeight);
+            
+            var ElemTop =  Math.floor($('#five').offset().top);
+            var newElemTop = ElemTop+newDocHeight;
+            console.log("Element top: "+ ElemTop);
+            console.log("New Element top: " + newElemTop);
+            
+            
+            $(window).scroll(function(){
+                var DocScroll = $(window).scrollTop();                
+                var DocView = DocHeight + DocScroll;
+                console.log("Window position "+ Math.floor(DocView));
+                if(DocView >= newElemTop){
+                    $('#five').addClass( "newFive");
+                }
+
+            });
+
+
+
+                    
+        });
+
+    </script>
 </body>
 </html>

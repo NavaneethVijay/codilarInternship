@@ -33,7 +33,7 @@ ul li {
 }
 
 
-#account, .nav-text {
+#account, .nav-text, #top-nav-text2 {
   display: none;
 }
 #ham-toggle img{
@@ -442,7 +442,7 @@ footer p {
   .nav-text{
     display: inline;
     position: relative;
-    top: 2px;
+    top: 3px;
     left: 10px;
     font-size: 10px;
   }
@@ -460,7 +460,10 @@ footer p {
     display: inline-block;
   }
 
-  #account {
+  #top-nav-text1{
+    display: none;
+  }
+  #account, #top-nav-text2 {
     display: inline-block;
   }
 
@@ -556,7 +559,7 @@ footer p {
     position: relative;
     left: 40%;
     width: 50%;
-    margin-top: -75%;
+    margin-top: -73%;
     height: 100px;
     float: right;
     animation-name: load;
