@@ -74,8 +74,20 @@ ul li:not(:first-child) {
 }
 
 
-
-
+.ver-text{
+  position: absolute;
+  transform: rotate(-90deg);
+  left: 45%;
+}
+.ver-text::after{
+  content: "";
+  display: block;
+  position: relative;
+  
+  width: 80%;
+  height: 5px;
+  background-color: red;
+}
 
 
 /* end of nav for phone */
